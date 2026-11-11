@@ -22,7 +22,9 @@ A modern, full-stack, couple-centric web application designed for partners to st
 ## 🛠️ Architecture & Tech Stack
 
 - **Frontend:** Next.js / React, Tailwind CSS, Framer Motion
-- **Backend:** Node.js (Express / Next.js API Routes)
-- **Database:** PostgreSQL / Supabase DB (PostgreSQL relational models)
-- **Object Storage:** Cloudflare R2 / AWS S3 / Supabase Storage *(Images and media files are stored in object storage, while metadata and URLs are mapped in the database)*
-- **Auth:** Hardcoded single-pair authorization / Magic Links
+- **Backend:** Node.js and Express API in [`backend/`](./backend)
+- **Database:** PostgreSQL with couple-scoped authorization and row-level security
+- **Photo storage:** Private backend upload directory for local development; use persistent private storage in production
+- **Auth:** Email/password accounts, signed bearer tokens, and expiring partner invitations
+
+See the [backend setup and API documentation](./backend/README.md) to run the server and connect a frontend.
