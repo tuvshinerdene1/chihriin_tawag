@@ -1,0 +1,1 @@
+```For production, use HTTPS and keep refresh tokens in secure, appropriately configured storage. Don't put long-lived tokens in browser local storage. Also add logout/revocation, rate limiting, and email verification before launch.```
