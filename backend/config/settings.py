@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'corsheaders',
+    'drf_spectacular',
 
     'accounts',
     'bowls',
@@ -150,8 +151,16 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.IsAuthenticated",
     ],
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+
 }
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Chihriin Tawag API",
+    "DESCRIPTION": "Shared date planning and couple scrapbook backend",
+    "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
+}
