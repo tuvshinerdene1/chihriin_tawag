@@ -16,7 +16,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { LoginFormValues, loginSchema } from "../schemas/auth.schemas";
+import { LoginFormValues, loginSchema } from "../schemas/auth.schema";
 import { useLogin } from "../hooks/useAuth";
 
 export function LoginForm() {
